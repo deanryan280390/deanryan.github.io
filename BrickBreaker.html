@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>BrickBreaker</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="1200" height="700"> </canvas>   
+ 
+ <script type="text/javascript">
+var x = 150;
+ var y = 150;
+ var dx = 0.1;
+ var dy = -0.2;
+ var WIDTH = 1200;
+ var HEIGHT = 600;
+ var ctx;
+ var paddlex = WIDTH / 2;
+ var paddleh = 10;
+ var paddlew = 75;
+ var rightDown = false;
+ var leftDown = false;
+ 
+ var NROWS = 5;
+ var NCOLS = 5;
+ var BRICKWIDTH = (WIDTH/NCOLS) - 1;
+ var BRICKHEIGHT = 15;
+ var PADDING = 1;
+ 
+ var ballr = 10;
+ var rowcolors = ["#FF1C0A", "#FFFD0A", "#00A308", "#0008DB", "#EB0093"];
+ var paddlecolor = "#FF1C0A";
+ var ballcolor = "rgba(255, 255, 0, .5)";
+ var backcolor = "#000000";
+
+ bricks = new Array(NROWS);
+ for (i=0; i < NROWS; i++) {
+   bricks[i] = new Array(NCOLS);
+   for (j=0; j < NCOLS; j++) {
+     bricks[i][j] = 1;
+   }
+ }
+ 
+
+
+
+ var draw = function(){
+		var testParagraph = document.getElementById("testParagraph");
+		//access canvas element from the DOM
+		var ctx = document.getElementById("myCanvas");
+		//You must pass the string "2d" to the getContext() method for 2D drawing
+		var ctx = ctx.getContext("2d");
+		
+		   ctx.fillStyle = backcolor;
+		   ctx.clearRect(0,0,WIDTH,HEIGHT);
+		   //ctx.fillStyle = ballcolor;
+		   circle(x,y,ballr);
+		   
+		   
+		   //ctx.fillStyle = paddlecolor;
+		   rect(paddlex, HEIGHT-paddleh, paddlew, paddleh);
+		   
+		   //draw bricks
+		   for (i=0; i < NROWS; i++) {
+			   ctx.fillStyle = rowcolors[i];
+		     for (j=0; j < NCOLS; j++) {
+		       if (bricks[i][j] == 1) {
+		         rect((j * (BRICKWIDTH + PADDING)) + PADDING, 
+		              (i * (BRICKHEIGHT + PADDING)) + PADDING,
+		              BRICKWIDTH, BRICKHEIGHT);
+		       }
+		     }
+		   }
+		   
+
+		   //have we hit a brick?
+		   rowheight = BRICKHEIGHT + PADDING;
+		   colwidth = BRICKWIDTH + PADDING;
+		   row = Math.floor(y/rowheight);
+		   col = Math.floor(x/colwidth);
+		   //if so, reverse the ball and mark the brick as broken
+		   if (y < NROWS * rowheight && row >= 0 && col >= 0 && bricks[row][col] == 1) {
+		     dy = -dy;
+		     bricks[row][col] = 0;
+		   }
+		   
+
+ 		   if (x + dx > WIDTH || x + dx < 0)
+		     dx = -dx;
+
+		   if (y + dy < 0)
+		     dy = -dy;
+		   
+		   if(paddlex < 1)
+			   paddlex = 2;
+		   if(paddlex > WIDTH)
+			   paddlex = WIDTH - paddlew;
+		   
+		   else if (y + dy > HEIGHT) {
+		     if (x > paddlex && x < paddlex + paddlew)
+		       dy = -dy;
+		     
+		     else
+		       //game over, so stop the animation
+		       clearInterval(intervalId);
+		   } 
+		   
+		   
+		   x += dx;
+		   y += dy;
+		    
+		   function circle(x,y,r) {
+				  ctx.beginPath();
+				  ctx.arc(x, y, r, 0, Math.PI*2, true);
+				  ctx.closePath();
+				  ctx.fill();
+				}
+
+				function rect(x,y,w,h) {
+				  ctx.beginPath();
+				  ctx.rect(x,y,w,h);
+				  ctx.closePath();
+				  ctx.fill();
+				}
+
+				function clear() {
+				  ctx.clearRect(0, 0, WIDTH, HEIGHT);
+				}
+				
+				function setthedown(e) {
+					
+					if (e.which == 39) rightDown = true;
+					else if (e.which == 37) leftDown = true;
+					}
+
+					function settheup(e) {
+					if (e.which == 39) rightDown = false;
+					else if (e.which == 37) leftDown = false;
+					}
+
+					window.addEventListener("keydown", setthedown, false);
+					window.addEventListener("keyup", settheup, false);
+					
+					
+					if (rightDown) paddlex += 0.9;
+					else if (leftDown) paddlex -= 0.9;
+		   
+
+
+	   return setInterval(draw, 1);
+		   
+	 }
+ 
+ 
+
+ draw();
+ 
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?in11pr');
+  src:  url('fonts/icomoon.eot?in11pr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?in11pr') format('truetype'),
+    url('fonts/icomoon.woff?in11pr') format('woff'),
+    url('fonts/icomoon.svg?in11pr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative; }
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+.icon > .label {
+  display: none; }
+.icon:before {
+  line-height: inherit; }
+.icon.solid:before {
+  font-weight: 900; }
+.icon.brands:before {
+  font-family: 'Font Awesome 5 Brands'; }
+
+.icon-unrealengine:before {
+  content: "\e900";
+}

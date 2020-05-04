@@ -1,0 +1,18 @@
+{
+   "levelEntites":[
+      {
+         "type":"NormalPlatform",
+         "x":0,
+         "y":450,
+         "width":300,
+         "height":10
+      },
+	   {
+         "type":"NormalPlatform",
+         "x":200,
+         "y":650,
+         "width":300,
+         "height":10
+      }
+   ]
+}

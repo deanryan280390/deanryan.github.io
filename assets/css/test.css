@@ -1,0 +1,36 @@
+﻿/* Step 1: Common Properties: All required to make icons render reliably */
+.iconSkills::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.centerIcon
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* Step 2: Reference Individual Icons */
+.unity::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f949";
+}
+
+.login::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f949";
+}
+
+.loginNew::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f949";
+}

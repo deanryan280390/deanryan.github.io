@@ -1,122 +1,399 @@
-<!DOCTYPE html>
-<html >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>comments & feeadbacks & history timeline</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-  <header>
-  <div class="container">
-    <h1 class="text-center text-danger grad-over">Timeline</h1>
+    <title>Timeline</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     
-  </div></header><br><br>
-  <section id="timeline-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="timeline-top">
-          <div class="top-year">2016</span></div>
+    
+    
+    <style>
 
-        </div>
-        <div class="timeline-block">
-          <div class="timeline-events">
-            <br>
-            <div class="event l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb fa fa-codepen"></span>
-              <div class=" event-body">
-                <div class="person-image pull-left ">
-                  <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="person" /></div>
-<div class="event-content">
-<h5 class="text-primary text-left">Hoo</h5>
-<span class="text-muted text-left" style="display:block; margin: 0"><small>March 2013</small></span>
-<br><br>
-                <blockquote class="text-muted text-left">I completed a successful internship in Amsterdam , me and my team created a game called Synergy. The time i spent working on this game , I created tools for game designers to set up levels and game play flow using C# and XNA<br>
-<cite class="text-muted text-right text-bold"></cite>
-</blockquote>
+        .timeline{
+            --uiTimelineMainColor: var(--timelineMainColor, #f56a6a);
+            --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
 
-</div>
-              </div> <!-- end of event body -->
-<div class="clear-fix"></div>
-            </div><!-- end of left event -->
-            <div class="row"></div>
-            <div class="event r-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb fa fa-facebook"></span>
-              <div class=" event-body">
-                <div class="person-image pull-left "><img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="person" /></div>
-<div class="event-content">
-<h5 class="text-primary text-left">IT-PLUS programming solution </h5>
-<span class="text-muted text-left" style="display:block; margin: 0"><small>19 October 2016</small></span>
-<br><br>
-                <blockquote class="text-muted text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae non praesentium vitae dolorum qui, reprehenderit harum <br>
-<cite class="text-muted text-right text-bold">- Alex Martin</cite>
-</blockquote>
+            position: relative;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
 
-</div>
-              </div>
-            </div><!-- end of right event <-->
-              <div class="clearfix"></div>
-            </-->
-            <div class="row"></div>
-            <div class="event l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb fa fa-twitter"></span>
-              <div class=" event-body">
-                <div class="person-image pull-left "><img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="person" /></div>
-<div class="event-content">
-<h5 class="text-primary text-left">IT-PLUS programming solution </h5>
-<span class="text-muted text-left" style="display:block; margin: 0"><small>19 October 2016</small></span>
-<br><br>
-                <blockquote class="text-muted text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae non praesentium vitae dolorum qui, reprehenderit harum <br>
-<cite class="text-muted text-right text-bold">- Alex Martin</cite>
-</blockquote>
+        .timeline:before{
+            content: "";
+            width: 4px;
+            height: 100%;
+            background-color: var(--uiTimelineMainColor);
+
+            position: absolute;
+            top: 0;
+        }
+
+        .timeline__group{
+            position: relative;
+        }
+
+        .timeline__group:not(:first-of-type){
+            margin-top: 4rem;
+        }
+
+        .timeline__year{
+            padding: .5rem 1.5rem;
+            color: var(--uiTimelineSecondaryColor);
+            background-color: var(--uiTimelineMainColor);
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .timeline__box{
+            position: relative;
+        }
+
+        .timeline__box:not(:last-of-type){
+            margin-bottom: 30px;
+        }
+
+        .timeline__box:before{
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: var(--uiTimelineMainColor);
+
+            position: absolute;
+            left: 0;
+            z-index: -1;
+        }
+
+        .timeline__date{
+            min-width: 65px;
+            position: absolute;
+            left: 0;
+
+            box-sizing: border-box;
+            padding: .5rem 1.5rem;
+            text-align: center;
+
+            background-color: var(--uiTimelineMainColor);
+            color: var(--uiTimelineSecondaryColor);
+        }
+
+        .timeline__day{
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .timeline__month{
+            display: block;
+            font-size: .8em;
+            text-transform: uppercase;
+        }
+
+        .timeline__post{
+            padding: 1.5rem 2rem;
+            border-radius: 2px;
+            border-left: 3px solid var(--uiTimelineMainColor);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+            background-color: var(--uiTimelineSecondaryColor);
+        }
+
+        @media screen and (min-width: 641px){
+
+            .timeline:before{
+                left: 30px;
+            }
+
+            .timeline__group{
+                padding-top: 55px;
+            }
+
+            .timeline__box{
+                padding-left: 80px;
+            }
+
+            .timeline__box:before{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .timeline__date{
+                top: 50%;
+                margin-top: -27px;
+            }
+        }
+
+        @media screen and (max-width: 640px){
+
+            .timeline:before{
+                left: 0;
+            }
+
+            .timeline__group{
+                padding-top: 40px;
+            }
+
+            .timeline__box{
+                padding-left: 20px;
+                padding-top: 70px;
+            }
+
+            .timeline__box:before{
+                top: 90px;
+            }
+
+            .timeline__date{
+                top: 0;
+            }
+        }
+
+        .timeline{
+            --timelineMainColor: #f56a6a;
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        /*
+        =====
+        DEMO
+        =====
+        */
+
+        @media (min-width: 768px){
+
+            html{
+                font-size: 62.5%;
+            }
+        }
+
+        @media (max-width: 767px){
+
+            html{
+                font-size: 55%;
+            }
+        }
+
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+            font-size: 1.6rem;
+            color: #222;
+
+            background-color: #f0f0f0;
+            margin: 0;
+            -webkit-overflow-scrolling: touch;
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        p{
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        p:last-child{
+            margin-bottom: 0;
+        }
+
+        .page{
+            max-width: 800px;
+            padding: 10rem 2rem 3rem;
+            margin-left: auto;
+            margin-right: auto;
+            order: 1;
+        }
+
+        /*
+        =====
+        LinkedIn
+        =====
+        */
+
+        .linkedin{
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .linkedin__container{
+            max-width: 1000px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .linkedin__text{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .linkedin__link{
+            color: #ff5c5c;
+        }
+    </style>
+</head>
+<body class="is-preload">
+<div id="wrapper">
+
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <ul class="icons">
+                    <li><a href="https://github.com/deanryan280390" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/dean-ryan-422a3b6b/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                </ul>
+            </header>
+<div class="page">
+    <div class="timeline">
+        
+        <!-- 2019-->
+        <div class="timeline__group">
+            <span class="timeline__year">2019</span>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">7</span>
+                    <span class="timeline__month">Jan</span>
                 </div>
-</div>
-            </div><!-- end of left event <-->
-              <div class="clearfix"></div>
-            
-            <div class="row"></div>
-            <div class="event r-event col-md-6 col-sm-6 col-xs-8 ">
-              <span class="thumb fa fa-codepen"></span>
-             <div class=" event-body">
-                <div class="person-image pull-left "><img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="person" /></div>
-<div class="event-content">
-<h5 class="text-primary text-left">IT-PLUS programming solution </h5>
-<span class="text-muted text-left" style="display:block; margin: 0"><small>19 October 2016</small></span>
-<br><br>
-                <blockquote class="text-muted text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsum voluptates sapiente beatae non praesentium vitae dolorum qui, reprehenderit harum <br>
-<cite class="text-muted text-right text-bold">- Alex Martin</cite>
-</blockquote>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>I developed an augmented reality application called <a href="Portfolio.html">Reydar</a>, this was my second app released on the ios apple and google play store, but my first app released as Lead Developer.</p>
+                    </div>
                 </div>
-</div>
-            </div><!-- end of right event <-->
-              <div class="clearfix"></div>
-            </-->
-          </div><!-- end of timeline events -->
-          <div class="clearfix"></div>
+            </div>
         </div>
-      </div>
+
+        <!-- 2018-->
+        <div class="timeline__group">
+            <span class="timeline__year">2018</span>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">23</span>
+                    <span class="timeline__month">Dec</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>I developed a augmented reality app for <a href="Portfolio.html">Spaberry Jacuzzi</a>, my first apps released on the ios apple and google play store.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">20</span>
+                    <span class="timeline__month">Dec</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>I developed a Virtual Reality App for  <a href="Portfolio.html">Spaberry Jacuzzi,</a> my first app released on the Steam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">27</span>
+                    <span class="timeline__month">Nov</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>I developed an augmented reality application for the <a href="barclayar.html">Barclays Bank Cyber security</a> event at their London Headquarters , I was also there on-site as support for the event.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">14</span>
+                    <span class="timeline__month">May</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>I developed an assistance virtual reality application for Barclays Bank</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2016-->
+        <div class="timeline__group">
+            <span class="timeline__year">2016</span>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">11</span>
+                    <span class="timeline__month">Nov</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>This was my first position as a Unity developer at  <a href="symphony.html">Symphony AI</a>. I also worked very closely with Lidl, Petco and Diageo with the application I created with a team of four called Retail Store Visualization. I also acted as full supporter for these clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2014-->
+        <div class="timeline__group">
+            <span class="timeline__year">2014</span>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">5</span>
+                    <span class="timeline__month">Nov</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>This was my first position after graduating university as a Junior SQL Developer and then promoted to a ASP.net Developer. I created a Control Management System tool for a website called <a href="https://www.ijustloveit.co.uk/">I Just Love It.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2013-->
+        <div class="timeline__group">
+            <span class="timeline__year">2013</span>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">15</span>
+                    <span class="timeline__month">May</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>I graduated with a Bsc in Computer Games Development from the Institute of Carlow in Ireland.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">20</span>
+                    <span class="timeline__month">Feb</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>I took part in a experimental business proposal for a company in Austria in Vienna. This was with a team from all over europe Our team created a game called Kopswerke X.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 2012-->
+        <div class="timeline__group">
+            <span class="timeline__year">2013</span>
+            <div class="timeline__box">
+                <div class="timeline__date">
+                    <span class="timeline__day">5</span>
+                    <span class="timeline__month">Mar</span>
+                </div>
+                <div class="timeline__post">
+                    <div class="timeline__content">
+                        <p>I completed a successful internship in Amsterdam , me and my team created a game called Synergy. The time i spent working on this game , I created tools for game designers to set up levels and game play flow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
-  </section>
-<br /><hr />
-<footer class="text-center">
-  <div class="social">
-    Follow Me:
-    <a target="_blank" href="http://codepen.io/hosamsam/" >
-<abbr title="Codepen"><i class="fa fa-codepen follow" ></i></abbr>
-    </a>
-    <a href="https://www.behance.net/mosh3ref_2bcaa" target="_blank">
-<abbr title="Behance"><i class="fa fa-behance"></i></abbr></i>
-    </a>
-    <a href="https://github.com/hosamsam"><abbr title="Github" target="_blank"><i class="fa fa-github "></i></abbr></a>
-  </div>
-</footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
-
-    <script src="js/index.js"></script>
-
+</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

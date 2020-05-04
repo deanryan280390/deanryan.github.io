@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b398799-fc32-4039-8bd8-01286329694c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Less File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/assets/font-awesome/metadata/icons.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/assets/webfonts/fa-regular-400.svg" />
+        <option value="$PROJECT_DIR$/assets/css/fontawesome-all.min.css" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/css/brands.css" />
+        <option value="$PROJECT_DIR$/assets/css/test.css" />
+        <option value="$PROJECT_DIR$/myStyles/fontawesome-free-5.13.0-web/svgs/brands/csharp.svg" />
+        <option value="$PROJECT_DIR$/css/skills.css" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/css/timelineStyle.css" />
+        <option value="$PROJECT_DIR$/css/TimeLineStyle.less" />
+        <option value="$PROJECT_DIR$/Personal/Personal/Timeline.html" />
+        <option value="$PROJECT_DIR$/timeline.html" />
+        <option value="$PROJECT_DIR$/Portfolio.html" />
+        <option value="$PROJECT_DIR$/Portfolio_bk.html" />
+        <option value="$PROJECT_DIR$/barclayvr.html" />
+        <option value="$PROJECT_DIR$/elements.html" />
+        <option value="$PROJECT_DIR$/generic.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/css/all.css" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/css/fontawesome.css" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/css/fontawesome.min.css" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/less/_variables.less" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/css/all.min.css" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/js/all.js" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/js/all.min.js" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/js/brands.js" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/js/brands.min.js" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/less/_icons.less" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/metadata/icons.json" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/scss/_icons.scss" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/scss/_variables.scss" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/sprites/brands.svg" />
+        <option value="$PROJECT_DIR$/assets/font-awesome/webfonts/fa-brands-400.svg" />
+        <option value="$PROJECT_DIR$/fonts/style.css" />
+        <option value="$PROJECT_DIR$/symphony - Copy.html" />
+        <option value="$PROJECT_DIR$/kopsx.html" />
+        <option value="$PROJECT_DIR$/FontAwesomeTest.html" />
+        <option value="$PROJECT_DIR$/trenchesvr.html" />
+        <option value="$PROJECT_DIR$/symphony.html" />
+        <option value="$PROJECT_DIR$/MySkills.html" />
+        <option value="$PROJECT_DIR$/synergy.html" />
+        <option value="$PROJECT_DIR$/myStyles/fontawesome-free-5.13.0-web/svgs/brands/unity.svg" />
+        <option value="$PROJECT_DIR$/barclayar.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bDuz43pkiJs5bO5SvqeypUlWLL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/font-awesome/css" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b398799-fc32-4039-8bd8-01286329694c" name="Default Changelist" comment="" />
+      <created>1588179245207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588179245207</updated>
+      <workItem from="1588179251603" duration="8562000" />
+      <workItem from="1588271884214" duration="6020000" />
+      <workItem from="1588353933250" duration="7858000" />
+      <workItem from="1588420413183" duration="3739000" />
+      <workItem from="1588427229595" duration="14775000" />
+      <workItem from="1588512994733" duration="14060000" />
+      <workItem from="1588617247364" duration="4021000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1588527046903">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588527046903" />
+    <state x="559" y="51" width="1107" height="804" key="find.popup" timestamp="1588618664517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="559" y="51" width="1107" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588618664517" />
+    <state x="1081" y="244" key="run.anything.popup" timestamp="1588518420164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1081" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588518420164" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588620253449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588620253449" />
+  </component>
+</project>
