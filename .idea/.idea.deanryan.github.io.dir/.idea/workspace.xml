@@ -53,7 +53,6 @@
         <option value="$PROJECT_DIR$/barclayvr.html" />
         <option value="$PROJECT_DIR$/elements.html" />
         <option value="$PROJECT_DIR$/generic.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/font-awesome/css/all.css" />
         <option value="$PROJECT_DIR$/assets/font-awesome/css/fontawesome.css" />
         <option value="$PROJECT_DIR$/assets/font-awesome/css/fontawesome.min.css" />
@@ -80,6 +79,7 @@
         <option value="$PROJECT_DIR$/trenchesvr.html" />
         <option value="$PROJECT_DIR$/symphony.html" />
         <option value="$PROJECT_DIR$/timeline.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -114,7 +114,8 @@
       <workItem from="1588420413183" duration="3739000" />
       <workItem from="1588427229595" duration="14775000" />
       <workItem from="1588512994733" duration="14060000" />
-      <workItem from="1588617247364" duration="6002000" />
+      <workItem from="1588617247364" duration="6050000" />
+      <workItem from="1588791098632" duration="14000" />
     </task>
     <servers />
   </component>
