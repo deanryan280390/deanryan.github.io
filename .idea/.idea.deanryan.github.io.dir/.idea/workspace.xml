@@ -72,7 +72,6 @@
         <option value="$PROJECT_DIR$/symphony - Copy.html" />
         <option value="$PROJECT_DIR$/kopsx.html" />
         <option value="$PROJECT_DIR$/FontAwesomeTest.html" />
-        <option value="$PROJECT_DIR$/MySkills.html" />
         <option value="$PROJECT_DIR$/synergy.html" />
         <option value="$PROJECT_DIR$/myStyles/fontawesome-free-5.13.0-web/svgs/brands/unity.svg" />
         <option value="$PROJECT_DIR$/barclayar.html" />
@@ -80,6 +79,7 @@
         <option value="$PROJECT_DIR$/symphony.html" />
         <option value="$PROJECT_DIR$/timeline.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/MySkills.html" />
       </list>
     </option>
   </component>
@@ -115,7 +115,8 @@
       <workItem from="1588427229595" duration="14775000" />
       <workItem from="1588512994733" duration="14060000" />
       <workItem from="1588617247364" duration="6050000" />
-      <workItem from="1588791098632" duration="14000" />
+      <workItem from="1588791098632" duration="126000" />
+      <workItem from="1589732836586" duration="89000" />
     </task>
     <servers />
   </component>
@@ -142,17 +143,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588527046903" />
-    <state x="559" y="51" width="1107" height="804" key="find.popup" timestamp="1588622657449">
+    <state x="559" y="51" width="1107" height="804" key="find.popup" timestamp="1589732904411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="559" y="51" width="1107" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588622657449" />
+    <state x="559" y="51" width="1107" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589732904411" />
     <state x="1081" y="244" key="run.anything.popup" timestamp="1588518420164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1081" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588518420164" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588623632467">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589732908210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588623632467" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589732908210" />
   </component>
 </project>
