@@ -48,7 +48,6 @@
         <option value="$PROJECT_DIR$/css/timelineStyle.css" />
         <option value="$PROJECT_DIR$/css/TimeLineStyle.less" />
         <option value="$PROJECT_DIR$/Personal/Personal/Timeline.html" />
-        <option value="$PROJECT_DIR$/Portfolio.html" />
         <option value="$PROJECT_DIR$/Portfolio_bk.html" />
         <option value="$PROJECT_DIR$/barclayvr.html" />
         <option value="$PROJECT_DIR$/elements.html" />
@@ -77,11 +76,18 @@
         <option value="$PROJECT_DIR$/barclayar.html" />
         <option value="$PROJECT_DIR$/trenchesvr.html" />
         <option value="$PROJECT_DIR$/symphony.html" />
-        <option value="$PROJECT_DIR$/timeline.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/MySkills.html" />
+        <option value="$PROJECT_DIR$/Portfolio.html" />
+        <option value="$PROJECT_DIR$/timeline.html" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1bDuz43pkiJs5bO5SvqeypUlWLL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -116,7 +122,8 @@
       <workItem from="1588512994733" duration="14060000" />
       <workItem from="1588617247364" duration="6050000" />
       <workItem from="1588791098632" duration="126000" />
-      <workItem from="1589732836586" duration="89000" />
+      <workItem from="1589732836586" duration="214000" />
+      <workItem from="1589733130475" duration="133000" />
     </task>
     <servers />
   </component>
@@ -143,10 +150,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588527046903" />
-    <state x="559" y="51" width="1107" height="804" key="find.popup" timestamp="1589732904411">
+    <state x="559" y="51" width="1107" height="804" key="find.popup" timestamp="1589733274785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="559" y="51" width="1107" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589732904411" />
+    <state x="559" y="51" width="1107" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589733274785" />
     <state x="1081" y="244" key="run.anything.popup" timestamp="1588518420164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
